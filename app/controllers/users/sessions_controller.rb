@@ -9,7 +9,7 @@ class Users::SessionsController < Devise::SessionsController
     if resource.persisted?
       render json: { status: 200, user: resource, message: 'you are successfully logged in' }
     else
-      render json: { message: "Invalid email or password" }, status: :unprocessable_entity
+      render json: { message: 'Invalid email or password' }, status: :unprocessable_entity
     end
   end
 
