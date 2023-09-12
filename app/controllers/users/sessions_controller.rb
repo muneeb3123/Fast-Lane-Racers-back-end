@@ -6,7 +6,11 @@ class Users::SessionsController < Devise::SessionsController
   private
 
   def respond_with(resource, _opts = {})
-    render json: { user: resource, message: 'you are successfully logged in' }
+    if resource.persisted?
+      render json: { status: 200, user: resource, message: 'you are successfully logged in' }
+    else
+      render json: { message: 'Invalid email or password' }, status: :unprocessable_entity
+    end
   end
 
   def respond_to_on_destroy
@@ -16,7 +20,7 @@ class Users::SessionsController < Devise::SessionsController
         message: 'logged out successfully'
       }, status: :ok
     else
-      render json: { status: 401, message: "Couldn't find an active session." }
+      render json: { status: 401, message: "Couldn't find an active session." }, status: :unprocessable_entity
     end
   end
 end
