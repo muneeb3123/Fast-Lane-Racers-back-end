@@ -8,7 +8,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if resource.persisted?
       render json: { status: 200, user: resource, message: 'User created successfully' }
     else
-      render json: {status: 401, errors: resource.errors.full_messages }, status: :unprocessable_entity
+      render json: { status: 401, errors: resource.errors.full_messages }, status: :unprocessable_entity
     end
   end
 

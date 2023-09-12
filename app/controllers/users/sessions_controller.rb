@@ -16,7 +16,7 @@ class Users::SessionsController < Devise::SessionsController
         message: 'logged out successfully'
       }, status: :ok
     else
-      render json: { status: 401, message: "Couldn't find an active session." }
+      render json: { status: 401, message: "Couldn't find an active session." }, status: :unprocessable_entity
     end
   end
 end
