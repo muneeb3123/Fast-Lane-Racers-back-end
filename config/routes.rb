@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post '/reservations', to: 'reservations#create'
+
   get '/current_user', to: 'current_user#index'
 
   devise_for :users, path:'', path_names: {
@@ -10,4 +12,5 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
+
 end
