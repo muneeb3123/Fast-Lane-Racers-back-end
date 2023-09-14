@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  post '/reservations', to: 'reservations#create'
+  resources :reservations, only: [:index, :show, :create]
 
   get '/current_user', to: 'current_user#index'
 
