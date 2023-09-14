@@ -15,3 +15,7 @@ cars = [
 cars.each do |car|
   Car.create(name: car[0], description: car[1], finance_fee: car[2], option_to_purchase_fee: car[3], total_amount_payable: car[4], duration: car[5], apr: car[6], image: car[7])
 end
+
+
+# Create Admin user
+User.create(name: "muneeb", email: "rehmanmuneeb66@gmail.com", password:"123456", password_confirmation: "123456", role: "admin")
