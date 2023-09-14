@@ -1,13 +1,14 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   include RackSessionFix
   respond_to :json
+
   private
 
   def respond_with(resource, _opts = {})
     if resource.persisted?
-      render json: { user: resource, message: 'User created successfully' }
+      render json: { status: 200, user: resource, message: 'User created successfully' }
     else
-      render json: { status: 401, message: 'Unable to create user' }
+      render json: { status: 401, errors: resource.errors.full_messages }, status: :unprocessable_entity
     end
   end
 

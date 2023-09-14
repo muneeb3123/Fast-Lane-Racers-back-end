@@ -21,23 +21,24 @@ class CarsController < ApplicationController
     if @car.save
       render json: @car
     else
-      render json: {error: "Not Found"}
+      render json: { error: 'Not Found' }
     end
   end
 
   def destroy
     @car = Car.find(params[:id])
     if @car.destroy!
-      render json: {message: "Car Deleted"}
+      render json: { message: 'Car Deleted' }
     else
-      render json: {error: "Not Found"}
+      render json: { error: 'Not Found' }
     end
   end
 
   private
 
   def car_params
-    params.require(:car).permit(:name, :description, :finance_fee, :option_to_purchase_fee, :total_amount_payable, :duration, :apr, :image)
+    params.require(:car).permit(:name, :description, :finance_fee, :option_to_purchase_fee, :total_amount_payable,
+                                :duration, :apr, :image)
   end
   
   def load_car
