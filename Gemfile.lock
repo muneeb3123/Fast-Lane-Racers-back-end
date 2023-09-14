@@ -77,8 +77,12 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+<<<<<<< HEAD
+    cancancan (3.5.0)
+=======
     case_transform (0.2)
       activesupport
+>>>>>>> 91019f189e7fa817780319a89f90cbce1693b2a1
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
@@ -94,6 +98,7 @@ GEM
     devise-jwt (0.11.0)
       devise (~> 4.0)
       warden-jwt_auth (~> 0.8)
+    diff-lcs (1.5.0)
     dry-auto_inject (1.0.1)
       dry-core (~> 1.0)
       zeitwerk (~> 2.6)
@@ -104,6 +109,13 @@ GEM
       concurrent-ruby (~> 1.0)
       zeitwerk (~> 2.6)
     erubi (1.12.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
+    faker (3.2.1)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -198,6 +210,25 @@ GEM
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
+<<<<<<< HEAD
+    rspec-core (3.12.2)
+      rspec-support (~> 3.12.0)
+    rspec-expectations (3.12.3)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-mocks (3.12.6)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-rails (5.1.2)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
+      railties (>= 5.2)
+      rspec-core (~> 3.10)
+      rspec-expectations (~> 3.10)
+      rspec-mocks (~> 3.10)
+      rspec-support (~> 3.10)
+    rspec-support (3.12.1)
+=======
     rexml (3.2.6)
     rubocop (1.56.3)
       base64 (~> 0.1.1)
@@ -214,6 +245,7 @@ GEM
     rubocop-ast (1.29.0)
       parser (>= 3.2.1.0)
     ruby-progressbar (1.13.0)
+>>>>>>> 91019f189e7fa817780319a89f90cbce1693b2a1
     stringio (3.0.8)
     thor (1.2.2)
     timeout (0.4.0)
@@ -240,14 +272,21 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10.13)
   bootsnap
+  cancancan
   debug
   devise
   devise-jwt
+  factory_bot_rails
+  faker
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.8)
+<<<<<<< HEAD
+  rspec-rails (~> 5.0)
+=======
   rubocop (>= 1.0, < 2.0)
+>>>>>>> 91019f189e7fa817780319a89f90cbce1693b2a1
   tzinfo-data
 
 RUBY VERSION
