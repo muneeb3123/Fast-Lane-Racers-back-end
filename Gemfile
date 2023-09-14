@@ -42,14 +42,10 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-<<<<<<< HEAD
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem 'rspec-rails', '~> 5.0'
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'
-=======
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
->>>>>>> 91019f189e7fa817780319a89f90cbce1693b2a1
+  gem 'rspec-rails', '~> 5.0'
 end
 
 group :development do
@@ -57,8 +53,5 @@ group :development do
   # gem "spring"
 end
 
-<<<<<<< HEAD
-gem 'cancancan'
-=======
 gem 'active_model_serializers', '~> 0.10.13'
->>>>>>> 91019f189e7fa817780319a89f90cbce1693b2a1
+gem 'cancancan'

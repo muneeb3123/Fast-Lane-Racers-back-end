@@ -30,6 +30,5 @@ RSpec.describe Car, type: :model do
       )
       expect(car).not_to be_valid
     end
-
   end
 end
