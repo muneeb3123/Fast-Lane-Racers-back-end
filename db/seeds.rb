@@ -18,4 +18,4 @@ end
 
 
 # Create Admin user
-User.create(name: "muneeb", email: "rehmanmuneeb66@gmail.com", password:"123456", password_confirmation: "123456", role: "admin")
+User.create(name: "muneeb", email: "muneeb@@gmail.com", password:"123456", password_confirmation: "123456", role: "admin")
