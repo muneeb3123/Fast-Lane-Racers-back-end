@@ -46,6 +46,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_model_serializers (0.10.13)
+      actionpack (>= 4.1, < 7.1)
+      activemodel (>= 4.1, < 7.1)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
     activejob (7.0.8)
       activesupport (= 7.0.8)
       globalid (>= 0.3.6)
@@ -72,6 +77,8 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    case_transform (0.2)
+      activesupport
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
@@ -106,6 +113,7 @@ GEM
       rdoc
       reline (>= 0.3.8)
     json (2.6.3)
+    jsonapi-renderer (0.2.2)
     jwt (2.7.1)
     language_server-protocol (3.17.0.3)
     loofah (2.21.3)
@@ -131,7 +139,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.4-x64-mingw-ucrt)
+    nokogiri (1.15.4-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
@@ -227,10 +235,10 @@ GEM
     zeitwerk (2.6.11)
 
 PLATFORMS
-  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
+  active_model_serializers (~> 0.10.13)
   bootsnap
   debug
   devise
