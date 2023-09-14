@@ -5,6 +5,6 @@ class Reservation < ApplicationRecord
   attribute :city, :string
   attribute :date, :date
 
-  # validates :city, presence: true
-  # validates :date, presence: true, availability: true
+  validates :city, presence: true
+  validates :date, presence: true, availability: true
 end
