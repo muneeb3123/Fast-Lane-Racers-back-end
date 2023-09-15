@@ -1,5 +1,3 @@
-# spec/models/car_spec.rb
-
 require 'rails_helper'
 
 RSpec.describe Car, type: :model do
