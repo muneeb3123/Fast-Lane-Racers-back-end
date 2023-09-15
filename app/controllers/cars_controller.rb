@@ -1,6 +1,6 @@
 class CarsController < ApplicationController
   before_action :load_car, only: %i[show edit update destroy]
-  load_and_authorize_resource # Loads the @car object and authorizes actions
+  # load_and_authorize_resource # Loads the @car object and authorizes actions
 
   def index
     @cars = Car.all

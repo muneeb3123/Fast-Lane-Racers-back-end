@@ -77,12 +77,9 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
-<<<<<<< HEAD
     cancancan (3.5.0)
-=======
     case_transform (0.2)
       activesupport
->>>>>>> 91019f189e7fa817780319a89f90cbce1693b2a1
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
@@ -151,8 +148,6 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.4-x86_64-darwin)
-      racc (~> 1.4)
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -161,7 +156,6 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.4)
-    pg (1.5.4-x64-mingw-ucrt)
     psych (5.1.0)
       stringio
     puma (5.6.7)
@@ -210,7 +204,7 @@ GEM
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
-<<<<<<< HEAD
+    rexml (3.2.6)
     rspec-core (3.12.2)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.3)
@@ -228,8 +222,6 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.12.1)
-=======
-    rexml (3.2.6)
     rubocop (1.56.3)
       base64 (~> 0.1.1)
       json (~> 2.3)
@@ -245,14 +237,11 @@ GEM
     rubocop-ast (1.29.0)
       parser (>= 3.2.1.0)
     ruby-progressbar (1.13.0)
->>>>>>> 91019f189e7fa817780319a89f90cbce1693b2a1
     stringio (3.0.8)
     thor (1.2.2)
     timeout (0.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2023.3)
-      tzinfo (>= 1.0.0)
     unicode-display_width (2.4.2)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -282,11 +271,8 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.8)
-<<<<<<< HEAD
   rspec-rails (~> 5.0)
-=======
   rubocop (>= 1.0, < 2.0)
->>>>>>> 91019f189e7fa817780319a89f90cbce1693b2a1
   tzinfo-data
 
 RUBY VERSION
