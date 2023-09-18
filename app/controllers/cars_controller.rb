@@ -1,6 +1,7 @@
 class CarsController < ApplicationController
   before_action :load_car, only: %i[show edit update destroy]
-  load_and_authorize_resource only: %i[new create] # Loads the @car object and authorizes actions
+  # before_action :authenticate_user!
+  # load_and_authorize_resource only: %i[new create] # Loads the @car object and authorizes actions
 
   def index
     @cars = Car.all
@@ -38,7 +39,7 @@ class CarsController < ApplicationController
 
   def car_params
     params.require(:car).permit(:name, :description, :finance_fee, :option_to_purchase_fee, :total_amount_payable,
-                                :duration, :apr, :image)
+                                :duration, :apr, :image, :color)
   end
 
   def load_car
