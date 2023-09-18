@@ -22,7 +22,7 @@ class CarsController < ApplicationController
     if @car.save
       render json: @car
     else
-      render json: { error: 'Not Found' }
+      render json: { error: @car.errors.full_messages}
     end
   end
 
