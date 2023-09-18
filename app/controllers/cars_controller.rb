@@ -20,7 +20,7 @@ class CarsController < ApplicationController
   def create
     @car = Car.new(car_params)
     if @car.save
-      render json: @car
+      render json: { data: @car }
     else
       render json: { error: @car.errors.full_messages}
     end
