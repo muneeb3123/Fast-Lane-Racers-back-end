@@ -8,5 +8,6 @@ class Car < ApplicationRecord
   validates :total_amount_payable, presence: true
   validates :duration, presence: true
   validates :apr, presence: true
+  validates :color, presence: true
   validates :image, presence: true
 end
