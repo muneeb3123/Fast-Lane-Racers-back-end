@@ -73,10 +73,6 @@ Fast-Lane-Racers provides a seamless and reliable car booking experience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🗎 API Documentation <a name="api-docs"></a>
-
-- Check here API documentation [Fast-Lane-Racers app](https://Fast-Lane-Racers-backend.onrender.com/api-docs/index.html)
-
 <!-- React Frontend -->
 
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="23" height="20"/> React Frontend <a name="react-frontend"></a>
