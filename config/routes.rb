@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :reservations, only: [:index, :create]
+  resources :reservations, only: [:index, :create, :destroy]
 
   get '/current_user', to: 'current_user#index'
   
