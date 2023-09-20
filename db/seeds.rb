@@ -7,18 +7,14 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 cars = [
-  ['Ferrari 1', '
-    Ferrari is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 11, 21, 71, '31 months', 4.1, 'https://i.imgur.com/zyskQma.png', 'color1'],
-  ['Ferrari 2', '
-    Ferrari is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 12, 22, 72, '32 months', 4.2, 'https://i.imgur.com/XDNoVHm.png', 'color2'],
-  ['Ferrari 3', '
-    Ferrari is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 13, 23, 73, '33 months', 4.3, 'https://i.imgur.com/tlkh4wn.png', 'color3'],
-  ['Ferrari 4', '
-    Ferrari is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 13, 23, 73, '33 months', 4.3, 'https://i.imgur.com/CnNclIS.png', 'color4'],
-  ['Ferrari 5', '
-    Ferrari is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 13, 23, 73, '33 months', 4.3, 'https://i.imgur.com/ZQ3mhih.png', 'color5'],
-  ['Ferrari 6', '
-    Ferrari is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 13, 23, 73, '33 months', 4.3, 'https://i.imgur.com/HDzhvuv.png', 'color6']
+  ['Mercedes', '
+    Mercedes is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 11, 21, 71, '31 months', 4.1, 'https://i.imgur.com/h9Mo1AZ.png', 'Black'],
+  ['McLaren P1', '
+    McLaren P1 is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 12, 22, 72, '32 months', 4.2, 'https://i.imgur.com/o1OMj06.png', 'Grey'],
+  ['Bugatti Veyron P1.6', '
+    Bugatti Veyron P1.6 is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 13, 23, 73, '33 months', 4.3, 'https://i.imgur.com/ahilqIn.png', 'Red'],
+  ['Ferrari 599 SA Aperta', '
+    Ferrari 599 SA Aperta is an iconic Italian sports car brand celebrated for its sleek and powerful vehicles. It represents the pinnacle of automotive excellence and performance.', 14, 24, 74, '34 months', 4.4, 'https://i.imgur.com/L9XaS2r.png', 'White']
 ]
 
 cars.each do |car|
