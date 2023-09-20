@@ -128,7 +128,7 @@ Install this project with:
 <u>**For Backend**</u>
 
 ```sh
-  bundle install
+bundle install
 ```
 
 <u>**For Frontend**</u>
@@ -139,26 +139,22 @@ npm install
 
 ### Usage
 
-To run the project, execute the following command:
 <u>**For Backend**</u>
 
+If you are a Microverse reviewer, create a ```master.key``` file in ```config``` directory and paste the master key provided with the review request. If you are someone other than a Microverse Reviewer, contact us.
+
+To run the project, execute the following commands:
+
 ```sh
-  Set up JWT secret key key as follow:-
-  rails secret (copy secret_key)
-
-  Linux/Mac user:-
-  export DEVISE_JWT_SECRET_KEY=secret_key
-
-  Window user:-
-  set DEVISE_JWT_SECRET_KEY=secret_key
-  or
-  $env:DEVISE_JWT_SECRET_KEY="secret_key"
-
-
+  rails db:create
+  rails db:migrate
+  rails db:seed
   rails server
 ```
 
 <u>**For Frontend**</u>
+
+To run the project, execute the following command:
 
 ```sh
   npm start
@@ -169,7 +165,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  npm test
+  Backend:  rspec
 ```
 
 ### Deployment
@@ -257,6 +253,6 @@ I would like to acknowledge:
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./License) licensed.
+This project is [MIT](https://github.com/muneeb3123/Fast-Lane-Racers-back-end/blob/dev/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
