@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
-  resources :reservations, only: [:index, :create]
+  resources :reservations, only: [:index, :create, :destroy]
 
   get '/current_user', to: 'current_user#index'
   
