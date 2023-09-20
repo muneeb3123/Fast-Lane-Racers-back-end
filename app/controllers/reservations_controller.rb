@@ -15,6 +15,12 @@ class ReservationsController < ApplicationController
     end
   end
 
+  def destroy
+    @reserve = current_user.reservations.find(params[:id])
+    @reserve.destroy
+    render json: { response: 'Reservation has been cancelled' }
+  end
+
   private
 
   def reservation_params
