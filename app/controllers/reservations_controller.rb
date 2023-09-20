@@ -2,7 +2,7 @@ class ReservationsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @reservation = current_user.reservations
+    @reservation = current_user.reservations.order(created_at: :desc)
     render json: @reservation
   end
 
