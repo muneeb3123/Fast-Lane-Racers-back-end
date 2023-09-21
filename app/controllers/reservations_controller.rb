@@ -1,5 +1,5 @@
 class ReservationsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:create]
 
   def index
     @reservation = current_user.reservations.order(created_at: :desc)
@@ -11,7 +11,7 @@ class ReservationsController < ApplicationController
     if @reserve.save
       render json: { response: 'Successfully added to reservation' }
     else
-      render json: @reserve.errors, status: :unprocessable_entity
+      render json: @reserve.errors.full_messages, status: :unprocessable_entity
     end
   end
 

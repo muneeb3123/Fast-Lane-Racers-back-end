@@ -1,7 +1,6 @@
 class CarsController < ApplicationController
   before_action :load_car, only: %i[show edit update destroy]
-  # before_action :authenticate_user!
-  # load_and_authorize_resource only: %i[new create] # Loads the @car object and authorizes actions
+  before_action :authenticate_user!, only: %i[create destroy]
 
   def index
     @cars = Car.all
@@ -20,7 +19,7 @@ class CarsController < ApplicationController
   def create
     @car = Car.new(car_params)
     if @car.save
-      render json: { data: @car }
+      render json: { data: @car, message: 'Car created successfully' }
     else
       render json: { error: @car.errors.full_messages }
     end
