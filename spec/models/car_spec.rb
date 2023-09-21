@@ -11,6 +11,7 @@ RSpec.describe Car, type: :model do
         total_amount_payable: 1500,
         duration: 36,
         apr: 5.0,
+        color: 'red',
         image: 'example_image.jpg'
       )
       expect(car).to be_valid
