@@ -79,6 +79,4 @@ test:
 #
 production:
   <<: *default
-  database: Fast_Lane_Racers_back_end_production
-  username: Fast_Lane_Racers_back_end
-  password: <%= ENV["FAST_LANE_RACERS_BACK_END_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
