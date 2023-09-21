@@ -11,6 +11,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [🗎 API Documentation ](#api-documentation-)
   - [ React Frontend ](#-react-frontend-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
@@ -59,6 +60,10 @@ Fast-Lane-Racers provides a seamless and reliable car booking experience.
   </ul>
 </details>
 
+ ### 🗎 API Documentation <a name="api-documentation"></a>
+
+Check here API documentation [Fast-Lane-Racers](http://127.0.0.1:3000/api-docs/index.html)
+
 ### Key Features <a name="key-features"></a>
 
 - Only Admin can add or delete Cars from the website.
@@ -78,7 +83,7 @@ Fast-Lane-Racers provides a seamless and reliable car booking experience.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- [Live Demo](https://shiny-longma-bba6fb.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
