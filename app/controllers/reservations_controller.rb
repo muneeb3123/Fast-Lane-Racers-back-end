@@ -18,7 +18,7 @@ class ReservationsController < ApplicationController
   def destroy
     @reserve = current_user.reservations.find(params[:id])
     if @reserve.destroy
-       render json: { response: 'Reservation has been cancelled' }
+      render json: { response: 'Reservation has been cancelled' }
     else
       render json: @reserve.errors, status: :unprocessable_entity
     end
