@@ -1,7 +1,7 @@
 databases:
   - name: Fast-Lane-Racers
-    databaseName: fast_lane_racers
-    user: fast_lane_racers_user
+    databaseName: fast_lane_racers_x267
+    user: fast_lane_racers_x267_user
 
 services:
   - type: web
@@ -12,7 +12,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: fast_lane_racers
+          name: fast_lane_racers_x267
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
