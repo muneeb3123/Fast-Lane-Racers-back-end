@@ -2,16 +2,13 @@ databases:
   - name: Fast-Lane-Racers
     databaseName: fast_lane_racers_x267
     user: fast_lane_racers_x267_user
-    plan: free
 
 services:
   - type: web
     name: Fast-Lane-Racers
     runtime: ruby
-    plan: free
     buildCommand: "./bin/render-build.sh"
-    # preDeployCommand: "./bin/rails db:migrate" # preDeployCommand only available on paid instance types
-    startCommand: "./bin/rails server"
+    startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -19,5 +16,3 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-      - key: WEB_CONCURRENCY
-        value: 2 # sensible default
