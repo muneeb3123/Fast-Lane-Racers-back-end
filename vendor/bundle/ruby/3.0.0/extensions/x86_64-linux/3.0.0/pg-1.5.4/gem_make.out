@@ -1,5 +1,9 @@
 current directory: /home/muneeb/Fast-Lane-Racers-back-end/vendor/bundle/ruby/3.0.0/gems/pg-1.5.4/ext
+<<<<<<< HEAD
 /usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20240119-456517-5nfcu0.rb extconf.rb
+=======
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20240118-430842-ubyjpr.rb extconf.rb
+>>>>>>> dev
 Calling libpq with GVL unlocked
 checking for pg_config... yes
 Using config values from /usr/bin/pg_config
@@ -55,5 +59,9 @@ linking shared-object pg_ext.so
 
 current directory: /home/muneeb/Fast-Lane-Racers-back-end/vendor/bundle/ruby/3.0.0/gems/pg-1.5.4/ext
 make DESTDIR\= install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 pg_ext.so ./.gem.20240119-456517-nx75nj
+=======
+/usr/bin/install -c -m 0755 pg_ext.so ./.gem.20240118-430842-vdfdkc
+>>>>>>> dev
 installing pg_ext libraries
